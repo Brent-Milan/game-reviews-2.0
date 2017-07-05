@@ -15,6 +15,19 @@ public class Review {
 	private String content;
 	private String date;
 	
+	private Review() {
+		
+	}
+	
+	
+	//check to see whether generated id is required
+	private Review(String title, String content, String date) {
+		this.title = title;
+		this.content = content;
+		this.date = date;
+	}
+	
+	//@ManyToOne
 	private Genre genre;
 
 	public long getId() {

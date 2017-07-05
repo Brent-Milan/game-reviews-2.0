@@ -2,7 +2,6 @@ package Production;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface ReviewRepository extends CrudRepository<Review, Long> {
-	
-	
+public interface GenreRepository extends CrudRepository<Genre, Long> {
+
 }
