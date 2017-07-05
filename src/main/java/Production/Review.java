@@ -3,6 +3,7 @@ package Production;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Review {
@@ -14,6 +15,8 @@ public class Review {
 	private String title;
 	private String content;
 	private String date;
+	private String imageUrl;
+	
 	
 	private Review() {
 		
@@ -21,14 +24,20 @@ public class Review {
 	
 	
 	//check to see whether generated id is required
-	private Review(String title, String content, String date) {
+	private Review(String title, String content, String date, String imageUrl) {
 		this.title = title;
 		this.content = content;
 		this.date = date;
+		this.imageUrl = imageUrl;
 	}
 	
-	//@ManyToOne
+	@ManyToOne
 	private Genre genre;
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
 
 	public long getId() {
 		return id;
