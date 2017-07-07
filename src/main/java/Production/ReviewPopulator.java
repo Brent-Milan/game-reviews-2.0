@@ -25,6 +25,16 @@ public class ReviewPopulator implements CommandLineRunner {
 		genreRepo.save(moba);
 		
 		
+		Review review1 = new Review("Final Fantasy XIV", mmo, "Lorem ipsum "
+				+ "dolor sit amet, consectetur adipiscing elit. Vivamus tortor "
+				+ "est, congue id elit at, sagittis iaculis urna. Suspendisse "
+				+ "sagittis a libero commodo lacinia. Vivamus feugiat nunc ut "
+				+ "lacus aliquet, sit amet fringilla libero tempor. "
+				+ "Maecenas pharetra sit amet metus sed malesuada. Donec ac massa "
+				+ "sed mi lobortis vulputate. Integer at lacus eu elit mollis egestas "
+				+ "id vitae nibh. Duis et nunc at velit varius sodales. Proin et "
+				+ "accumsan risus.", "July 6, 2017", "/images/ffxiv.jpg");
+		
 		
 	}
 	
