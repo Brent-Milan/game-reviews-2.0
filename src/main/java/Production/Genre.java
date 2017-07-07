@@ -5,6 +5,7 @@ import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Genre {
@@ -19,6 +20,10 @@ public class Genre {
 	
 	private Genre() {
 		
+	}
+	
+	private Genre(String name) {
+		this.name = name;
 	}
 	
 	public long getId() {
