@@ -18,11 +18,12 @@ public class Genre {
 	@OneToMany(mappedBy="genre")
 	private Set<Review> reviews;
 	
+	@SuppressWarnings("unused")
 	private Genre() {
 		
 	}
 	
-	private Genre(String name) {
+	protected Genre(String name) {
 		this.name = name;
 	}
 	

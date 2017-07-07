@@ -20,13 +20,14 @@ public class Review {
 	private String imageUrl;
 	
 	
+	@SuppressWarnings("unused")
 	private Review() {
 		
 	}
 	
 	
 	//check to see whether generated id is required
-	private Review(String title, Genre genre,  String content, String date, String imageUrl) {
+	protected Review(String title, Genre genre,  String content, String date, String imageUrl) {
 		this.title = title;
 		this.genre = genre;
 		this.content = content;
