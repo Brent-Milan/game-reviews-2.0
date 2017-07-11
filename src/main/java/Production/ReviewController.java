@@ -12,6 +12,10 @@ public class ReviewController {
 	@Resource
 	ReviewRepository reviewRepo;
 	
+	@RequestMapping("/home")
+	public String displayHome(Model model) {
+		return "home";
+	}
 	
 	@RequestMapping("/reviews")
 	public String fetchReviews(Model model) {
