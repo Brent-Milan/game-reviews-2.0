@@ -1,0 +1,16 @@
+.jumbotron {
+	background-image: url("/images/hots-garrosh-wide.jpg");
+	height: 600px;
+}
+
+#splash-h1 {
+	color: white;
+	text-shadow: 2px 2px #ff0000;
+	margin-left: 15px;
+}
+
+#splash-h3 {
+	color: white;
+	text-shadow: 2px 2px #ff0000;
+	margin-left: 25px;
+}
