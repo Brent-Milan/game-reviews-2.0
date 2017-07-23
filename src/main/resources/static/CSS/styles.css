@@ -1,4 +1,9 @@
+.navbar {
+	margin-bottom: 0 !important;
+}
+
 .jumbotron {
+	margin-top: 0;
 	background-image: url("/images/hots-garrosh-wide.jpg");
 	height: 600px;
 }
@@ -7,7 +12,7 @@
 	color: white;
 	text-shadow: 2px 2px #ff0000;
 	margin-left: 15px;
-}
+} 
 
 #splash-h3 {
 	color: white;
